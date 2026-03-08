@@ -32,7 +32,11 @@ A web-based system to help students manage daily routines, assignments, deadline
 └── README.md
 ```
 
+## Week 1 & 2 Deliverables ✓
 
+- **Week 1:** React UI (Login, Register, Dashboard, Assignments, Routine), MySQL schema.
+- **Week 2:** Backend auth (BCrypt + JWT), Assignment & Routine CRUD with MySQL, **AI** scheduling (Earliest-Deadline-First), priority logic, assignment roadmap. Frontend connected to API; protected routes.
+- **AI roadmap:** Each step has a **date and time** (e.g. “Step 1: Read chapter — 2025-03-02 at 09:00”). Optional: set `OpenAI:ApiKey` in `appsettings.json` to use GPT for “how to do this assignment” steps; otherwise the app splits your uploaded document and assigns date+time from your routine. Run `database/03_add_roadmap_suggested_time.sql` for time support.
 
 ## Getting Started
 
@@ -61,10 +65,7 @@ dotnet run
 
 API runs at http://localhost:5000; Swagger at http://localhost:5000/swagger.
 
-### Database
 
-1. Create database and tables: run `database/01_schema.sql` in MySQL (e.g. `mysql -u root -p < database/01_schema.sql` or execute in MySQL Workbench).
-2. Optional: run `database/02_seed.sql` for sample data (if present).
 
 ## License
 
