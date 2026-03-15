@@ -1,0 +1,231 @@
+.mental-health-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mental-health-page h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-msg {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.muted {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #334155;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.btn-secondary:hover {
+  background: #cbd5e1;
+}
+
+.btn-small {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85rem;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Mental health & stress card */
+.stress-card {
+  background: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%);
+  border: 1px solid #e9d5ff;
+}
+
+.stress-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.stress-card-header h2 {
+  margin: 0;
+}
+
+.stress-message {
+  font-size: 0.9rem;
+  color: #6b21a8;
+  margin: 0 0 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #f3e8ff;
+  border-radius: 8px;
+}
+
+.stress-log {
+  border-top: 1px solid #e9d5ff;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.stress-log-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #5b21b6;
+}
+
+.stress-level-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stress-note-input {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e9d5ff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.stress-note-input::placeholder {
+  color: #a78bfa;
+}
+
+/* Stress meter (semi-circular gauge) */
+.stress-meter {
+  text-align: center;
+  margin: 0.75rem 0;
+}
+
+.stress-meter-svg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.stress-meter-needle {
+  transition: transform 0.5s ease-out;
+}
+
+.stress-meter-labels {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+  margin: 0.25rem auto 0;
+  padding: 0 0.5rem;
+  font-size: 0.7rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.stress-meter-label[data-segment="1"] { color: #22c55e; }
+.stress-meter-label[data-segment="2"] { color: #65a30d; }
+.stress-meter-label[data-segment="3"] { color: #ca8a04; }
+.stress-meter-label[data-segment="4"] { color: #ea580c; }
+.stress-meter-label[data-segment="5"] { color: #dc2626; }
+
+.stress-meter-now {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5b21b6;
+}
+
+.stress-meter-now-value {
+  font-size: 1.25rem;
+}
+
+.stress-meter-now-scale {
+  font-size: 0.9rem;
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+.stress-meter-now-text {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-top: 0.15rem;
+}
+
+.stress-meter-title {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.stress-meters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1rem 0;
+}
+
+.stress-meters-row .stress-meter {
+  flex: 0 0 auto;
+}
+
+.stress-meter--small .stress-meter-svg {
+  max-width: 100px;
+}
+
+.stress-meter--small .stress-meter-title {
+  font-size: 0.75rem;
+}
+
+.stress-meter--small .stress-meter-now {
+  font-size: 0.9rem;
+}
+
+.stress-meter--small .stress-meter-labels {
+  display: none;
+}
