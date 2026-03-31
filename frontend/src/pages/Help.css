@@ -1,0 +1,52 @@
+.help-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.help-page h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.help-intro {
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.help-section {
+  margin-bottom: 2rem;
+}
+
+.help-section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.help-section h3 {
+  font-size: 1rem;
+  margin: 1rem 0 0.35rem;
+  color: #334155;
+}
+
+.help-section p,
+.help-section li {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #475569;
+  margin: 0 0 0.5rem;
+}
+
+.help-section ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+.help-section kbd {
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background: #f1f5f9;
+  font-size: 0.85em;
+}
